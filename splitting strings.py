@@ -2,7 +2,6 @@ import time
 from pathlib import Path
 import sys
 from time import sleep
-
 words = "Booting up..."
 for char in words:
     sleep(0.2)
@@ -100,7 +99,7 @@ if state == "decrypt":
             new_list.append(unkey(ord(list[i])))
             dec_list.append(chr(new_list[i]))
         done = listToString(dec_list)
-        print("".join(map(str,dec_list)), end = " - is the decrypted form\n")
+    print("".join(map(str,dec_list)), end = " - is the decrypted form\n")
     file = input("Do you want to save the decrypted form in a file? ")
     if file == "Yes" or file == "yes":
         timestr = time.strftime("_%d-%m-%Y_%H-%M-%S")
