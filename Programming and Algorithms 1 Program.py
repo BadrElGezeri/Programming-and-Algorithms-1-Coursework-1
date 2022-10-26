@@ -94,7 +94,7 @@ while True:
                 text = f.read()
             print("The file contains the string:",text)
             # print(type(string))
-            user_key = int(input("Enter the decryption key:\n> "))
+            user_key = int(input("Enter your cryptography key:\n> "))
             string = R.decryptRailFence(text,user_key)
             list = ([*string])
             length = len(string)
@@ -105,7 +105,7 @@ while True:
             print("".join(map(str,dec_list)), end = " - is the decrypted form\n")
         elif choice == "string" or choice == "text":
             text = input("Input the text\n> ")
-            user_key = int(input("Enter the decryption key:\n> "))
+            user_key = int(input("Enter your cryptography key:\n> "))
             string = R.decryptRailFence(text,user_key)
             list = ([*string])
             length = len(string)
