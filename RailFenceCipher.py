@@ -14,14 +14,11 @@ def encryptRailFence(string, depth):
 	for j in Matrix:
 		Encryption+=''.join(j)
 	return Encryption
-	
-# This function receives cipher-text
-# and key and returns the original
-# text after decryption
+
 def decryptRailFence(cipher, key):
 
 	# create the matrix to cipher
-	# plain text key = rows ,
+	# plain text key = rows
 	# length(text) = columns
 	# filling the rail matrix to
 	# distinguish filled spaces
@@ -86,6 +83,6 @@ def decryptRailFence(cipher, key):
 			row -= 1
 	return("".join(result))
 
-# Driver code
+
 # print(encryptRailFence(input("Enter text: "), int(input("Enter the depth: "))))
 # print(decryptRailFence(input("Enter text: "), 2))
