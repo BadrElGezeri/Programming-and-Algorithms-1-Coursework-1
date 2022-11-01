@@ -22,7 +22,6 @@ with open("Keys.txt", 'w') as f:
 with open("Keys.txt") as f:
     rand_num = f.read()
 os.system( "attrib +h Keys.txt" ) # Makes the file hidden to make it inaccessible to users
-listToString(rand_num)
 rand_num = rand_num.replace(" ","") # All of
 rand_num = rand_num.replace("[","") # these
 rand_num = rand_num.replace("]","") # are used

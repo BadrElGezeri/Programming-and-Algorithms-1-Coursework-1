@@ -23,8 +23,7 @@ def decryptRailFence(cipher, key):
 	# filling the rail matrix to
 	# distinguish filled spaces
 	# from blank ones
-	rail = [['\n' for i in range(len(cipher))]
-				for j in range(key)]
+	rail = [['\n' for i in range(len(cipher))]for j in range(key)]
 	
 	# to find the direction
 	dir_down = None

@@ -1,5 +1,5 @@
 def key(x,key_num):
-    y = x + key_num # A random function to scramble the ASCII values
+    y = x + key_num # Scrambles value depending on it's ASCII value
     return y # Return the result of the function
 
 def unkey(x,user_key):
