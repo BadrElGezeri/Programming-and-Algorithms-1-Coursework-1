@@ -9,4 +9,4 @@ Rail fence is used to change the positon of each character and then Caesar ciphe
 
 
 ## Example for the program working (For steps scroll down)
-![Gif is not avaliable](https://github.com/BadrElGezeri/Programming-and-Algorithms-1-Coursework-1-/blob/main/Encrypt%20example.gif = 350x350)
+<img src="https://github.com/BadrElGezeri/Programming-and-Algorithms-1-Coursework-1-/blob/main/Encrypt%20example.gif" width="250" height="250"/>
