@@ -78,11 +78,11 @@ while True:
             print("The cryptography key = ", key_num)
         file = input("Do you want to save the encrypted form in a file? \n> ")
         if file == "Yes" or file == "yes":
-            timestr = time.strftime("_%d-%m-%Y_%H-%M-%S")
+            timestr = time.strftime("_%d-%m-%Y_%H-%M-%S") # Reads the time in hh:mm:ss and the date at the time of the program running
             filename_saved = "encrypted" + str(timestr) + ".txt"
             with open(filename_saved, 'w') as f:
                 f.write(str(done))
-            print("File saved as", filename_saved,"at", Path.cwd())
+            print("File saved as", filename_saved,"at", Path.cwd()) # Path.cwd() prints the path that the file is saved in
     if state == "decrypt":
         choice = input("Do you want to decrypt text or a file? \n> ").lower()
         if choice == "file":
@@ -120,9 +120,9 @@ while True:
             print("File saved as", filename_saved,"at", Path.cwd())
     program_state = str(input("Do you want to retry?\n> ")).lower()
     if program_state == "yes":
-        new_list = []
-        dec_list = []
+        new_list = [] # Empties both lists
+        dec_list = [] # ↑
         continue
     else:
-        break
+        break # If the user types anything other than "yes", break the loop which will make pyhton go to line 128 (Ending the code)
 input("\nPress 'Enter' to close")

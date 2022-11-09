@@ -1,7 +1,7 @@
-def key(x,key_num):
-    y = x + key_num # Scrambles value depending on it's ASCII value
-    return y # Return the result of the function
+def key(string,key_num):
+    encrypted_text = string + key_num # Scrambles value depending on it's ASCII value
+    return encrypted_text # Return the result of the function
 
-def unkey(x,user_key):
-    y = x - user_key #Reverses what the key() function does
-    return y 
+def unkey(string,user_key):
+    decrypted_text = string - user_key #Reverses what the key() function does
+    return decrypted_text 
