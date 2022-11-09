@@ -1,5 +1,5 @@
 # Programming and Algorithms 1 Coursework 1
-## Badr El Gezeri // 202101632
+## Badr El Gezeri - 202101632
 
 This program encrypt and decrypts **both** text and text files.
 
